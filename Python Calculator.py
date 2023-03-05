@@ -1,15 +1,18 @@
-operator = input("Enter a operator ( + - * / ) : ")
+operator = input("Enter an operator (+ - * /): ")
 num1 = float(input("Enter the 1st number: "))
 num2 = float(input("Enter the 2nd number: "))
-result = 0
+
 
 if operator == "+":
-    result = number1 + number2
+    result = num1 + num2
 elif operator == "-":
-    result = number1 - number2
+    result = num1 - num2
 elif operator == "*":
-    result = number1 * number2
+    result = num1 * num2
 elif operator == "/":
-    result = number1 / number2
+    result = num1 / num2
 else:
-    print("Error")
+    print(f"{operator} is not a valid operator")
+    exit()
+
+print(round(result, 3))
